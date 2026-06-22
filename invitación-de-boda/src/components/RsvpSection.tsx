@@ -328,7 +328,7 @@ export default function RsvpSection() {
                 </div>
 
                 {/* Restricciones Alimenticias */}
-                <div>
+                <div className={isDeclined ? 'opacity-40 pointer-events-none' : ''}>
                   <label htmlFor="restrictions" className="block text-sm font-medium text-wedding-dark mb-2">
                     Restricciones alimenticias
                   </label>
@@ -345,7 +345,7 @@ export default function RsvpSection() {
                 </div>
 
                 {/* Mensaje */}
-                <div>
+                <div className={isDeclined ? 'opacity-40 pointer-events-none' : ''}>
                   <label htmlFor="message" className="block text-sm font-medium text-wedding-dark mb-2">
                     Mensaje para los novios
                   </label>
