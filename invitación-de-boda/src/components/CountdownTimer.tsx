@@ -21,12 +21,13 @@ export default function CountdownTimer() {
         transition={{ duration: 1 }}
         className="max-w-xl text-center"
       >
-        <span className="text-[10px] tracking-wide text-wedding-olive text-center mb-3 block">
+        <span className="text-[14px] tracking-wide text-wedding-olive text-center mb-3 block">
           Cada segundo cuenta
         </span>
-        <h2 className="font-serif text-3xl text-wedding-dark text-center mb-10">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[#22211D] text-center">
           Falta muy poco para el gran día
         </h2>
+        <div className="w-8 h-[1px] bg-stone-300 mx-auto my-6" />
 
         {isOver ? (
           <p className="font-serif text-2xl text-wedding-olive text-center">¡Hoy es el gran día!</p>

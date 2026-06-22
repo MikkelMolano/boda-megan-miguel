@@ -7,7 +7,7 @@ export const WEDDING_CONFIG = {
     name: 'Restaurante Salvo Patria',
     address: 'Cra. 4a Bis #58-60, Chapinero Alto · Bogotá',
     mapsUrl: 'https://maps.google.com/?q=Carrera+4a+Bis+58-60+Chapinero+Alto+Bogota+Colombia',
-    startTime: '4:00 PM',
+    startTime: '5:00 PM',
     endTime: '11:00 PM',
   }
 };

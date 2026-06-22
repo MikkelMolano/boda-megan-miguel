@@ -6,19 +6,20 @@ export default function EventLocations() {
   return (
     <section id="locations" className="pt-16 pb-20 px-6 sm:pt-20 sm:pb-24 sm:px-8 bg-stone-100 flex flex-col items-center">
       <div className="max-w-4xl w-full text-center">
-        <span className="text-xs tracking-wide text-stone-500 font-sans block mb-2">
+        <span className="text-[14px] tracking-wide text-stone-500 font-sans block mb-2">
           ¿Dónde y cuándo?
         </span>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 mb-10">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[#22211D]">
           Los Detalles del Evento
         </h2>
+        <div className="w-8 h-[1px] bg-stone-300 mx-auto my-6" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1 }}
-          className="bg-wedding-light border border-wedding-sand rounded-3xl p-6 shadow-none w-full max-w-sm md:max-w-md mx-auto flex flex-col justify-between text-left"
+          className="bg-transparent border border-wedding-dark/20 rounded-3xl p-6 shadow-none w-full max-w-sm md:max-w-md mx-auto flex flex-col justify-between text-left"
         >
           <div>
             {/* Cabecera Tarjeta */}
@@ -60,7 +61,7 @@ export default function EventLocations() {
             href={WEDDING_CONFIG.venue.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full mt-6 py-3 px-4 rounded-full border border-wedding-sand bg-transparent hover:bg-wedding-sand/40 transition-colors duration-300 text-sm font-sans tracking-normal normal-case text-wedding-dark"
+            className="flex items-center justify-center gap-2 w-full mt-6 py-3 px-4 rounded-full border border-wedding-dark/20 bg-transparent hover:bg-wedding-dark/5 transition-colors duration-300 text-sm font-sans tracking-normal normal-case text-wedding-dark"
           >
             <ExternalLink className="w-4 h-4" />
             Ver en Google Maps

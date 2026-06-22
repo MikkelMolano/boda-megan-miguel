@@ -23,9 +23,9 @@ export default function HeroHeader() {
         </p>
 
         {/* Nombres con tipografía Serif elegante */}
-        <h1 className="font-serif font-normal not-italic text-8xl sm:text-7xl text-[#5C5F4B] leading-tight flex flex-col items-center">
+        <h1 className="font-serif font-normal not-italic text-8xl sm:text-7xl text-[#22211D] leading-tight flex flex-col items-center">
           <span>Megan</span>
-          <span className="block font-serif font-normal not-italic text-[#5C5F4B] text-5xl my-1">&</span>
+          <span className="block font-serif font-normal not-italic text-[#22211D] text-5xl my-1">&</span>
           <span>Miguel</span>
         </h1>
 
@@ -38,7 +38,7 @@ export default function HeroHeader() {
           <span className="text-sm font-serif italic text-stone-500 mt-1">
             {WEDDING_CONFIG.location}
           </span>
-          <hr className="border-wedding-sand w-16 mx-auto mt-6 mb-0" />
+          <div className="w-8 h-[1px] bg-stone-300 mx-auto my-6" />
         </div>
 
         {/* Indicador de acción para bajar */}

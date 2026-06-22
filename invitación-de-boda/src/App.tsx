@@ -5,6 +5,7 @@ import CountdownTimer from "./components/CountdownTimer";
 import EventLocations from "./components/EventLocations";
 import RsvpSection from "./components/RsvpSection";
 import FloatingMenu from "./components/FloatingMenu";
+import Footer from "./components/Footer";
 import backgroundAudio from "./assets/BLAZE - EYES.mp3";
 
 export default function App() {
@@ -65,6 +66,8 @@ export default function App() {
 
         {/* 5. Contenedor del formulario RSVP */}
         <RsvpSection />
+
+        <Footer />
 
         {/* Espaciador final decorativo sutil para que el menú sticky no cubra elementos importantes */}
         <div className="h-28 bg-wedding-bg" />
