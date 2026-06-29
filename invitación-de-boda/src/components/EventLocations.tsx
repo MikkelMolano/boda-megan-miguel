@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { MapPin, Clock, ExternalLink } from "lucide-react";
+import { MapPin, Clock, ExternalLink, Shirt } from "lucide-react";
 import { WEDDING_CONFIG } from "../utils/weddingConfig";
 
 export default function EventLocations() {
@@ -51,6 +51,14 @@ export default function EventLocations() {
                   <p className="text-[9px] tracking-wide font-sans text-wedding-olive">Lugar</p>
                   <p className="text-base font-sans font-bold text-wedding-dark">{WEDDING_CONFIG.venue.name}</p>
                   <p className="text-xs font-sans text-wedding-dark/50 mt-0.5">{WEDDING_CONFIG.venue.address}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Shirt className="w-4 h-4 text-wedding-olive mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-[9px] tracking-wide font-sans text-wedding-olive">Dress Code</p>
+                  <p className="text-base font-sans font-bold text-wedding-dark">Colores tierra, menos blanco y verde</p>
                 </div>
               </div>
             </div>
