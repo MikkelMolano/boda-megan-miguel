@@ -10,7 +10,7 @@ export default function EventLocations() {
           ¿Dónde y cuándo?
         </span>
         <h2 className="font-serif text-3xl sm:text-4xl text-[#22211D]">
-          Los Detalles del Evento
+          Los detalles del evento
         </h2>
         <div className="w-8 h-[1px] bg-stone-300 mx-auto my-6" />
 
@@ -58,7 +58,10 @@ export default function EventLocations() {
                 <Shirt className="w-4 h-4 text-wedding-olive mt-0.5 shrink-0" />
                 <div>
                   <p className="text-[9px] tracking-wide font-sans text-wedding-olive">Dress Code</p>
-                  <p className="text-base font-sans font-bold text-wedding-dark">Colores tierra, menos blanco y verde</p>
+                  <p className="text-base font-sans font-bold text-wedding-dark">
+                    Medio formal / Medio casual<br />
+                    Colores tierra, menos blanco y verde
+                  </p>
                 </div>
               </div>
             </div>

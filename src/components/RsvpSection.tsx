@@ -14,9 +14,9 @@ const normalizarNombre = (nombre: string) => {
 };
 
 const llegadaOptions = [
-  { value: 'ceremonia', label: 'Ceremonia - 5 PM' },
-  { value: 'brindis',   label: 'Brindis - 6 PM' },
-  { value: 'otro',      label: 'Después de las 6 PM' },
+  { value: 'Ceremonia - 4:30 PM', label: 'Ceremonia - 4:30 PM' },
+  { value: 'Brindis - 6 PM',   label: 'Brindis - 6 PM' },
+  { value: 'Después de las 6 PM',      label: 'Después de las 6 PM' },
 ];
 
 const asistenciaOptions = [
@@ -169,6 +169,9 @@ export default function RsvpSection() {
                 <p className="font-sans text-stone-600 text-sm max-w-xs mx-auto leading-relaxed">
                   <span className="block mb-2">El mejor regalo es tu compañía.</span>
                   <span className="block">Si quieres tener un detalle extra, tendremos lluvia de sobres.</span>
+                  <span className="block mt-4">
+                    <strong className="font-bold">Nota importante:</strong> Si no alcanzas a llegar a las 4:30 en punto, porfa llega a partir de las 6:00 PM para no interrumpir la ceremonia.
+                  </span>
                 </p>
                 <p className="mt-8 text-[11px] text-stone-400">
                   {plazoVencido 
