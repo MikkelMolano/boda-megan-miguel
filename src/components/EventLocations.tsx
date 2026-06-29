@@ -27,7 +27,7 @@ export default function EventLocations() {
               La celebración
             </span>
             <h3 className="font-serif text-3xl text-wedding-dark mb-4">
-              Ceremonia, cena y fiesta
+              Ceremonia, comida y fiesta
             </h3>
 
             <div className="space-y-5">
