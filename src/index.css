@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Glamour Absolute';
+  src: url('./assets/GlamourAbsolute_Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sinhala MN';
+  src: url('/assets/fonts/SinhalaMN-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sinhala MN';
+  src: url('/assets/fonts/SinhalaMN-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* System Typography */
+  --font-serif: "Glamour Absolute", serif;
+  --font-sans: "Sinhala MN", sans-serif;
+
+  /* Custom Elegant Neutrals */
+  --color-stone-50: #fbfbf9;
+  --color-stone-100: #f5f4ef;
+  --color-stone-200: #e6e4dc;
+  --color-stone-300: #d6d3c7;
+  --color-stone-400: #b8b3a4;
+  --color-stone-500: #969180;
+  --color-stone-600: #787465;
+  --color-stone-700: #5e5a4e;
+  --color-stone-800: #3d3b33;
+  --color-stone-900: #22211d;
+
+  /* Wedding Custom Palette */
+  --color-wedding-bg: #FAF7EC;
+  --color-wedding-light: #ECE9E2;
+  --color-wedding-sand: #E1D7C4;
+  --color-wedding-sage: #CBD1A1;
+  --color-wedding-olive: #6F744A;
+  --color-wedding-dark: #515442;
+
+  /* Accent Highlight */
+  --color-accent-soft: #dfdbcf;
+  --color-accent-dark: #6e6a5b;
+
+  /* Micro-Interactions */
+  --animate-fade-in-up: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in: fadeIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Ajustes ópticos globales por cambio de fuente */
+h1, h2, h3, .font-serif {
+  /* Glamour Absolute requiere un tracking sutilmente menor para verse compacta y elegante */
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body, p, .font-sans {
+  /* Sinhala MN necesita un line-height generoso para legibilidad moderna */
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-wedding-bg);
+  color: var(--color-wedding-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-wedding-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-wedding-sand);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wedding-sage);
+}
