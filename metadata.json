@@ -1,0 +1,6 @@
+{
+  "name": "Invitación de Boda",
+  "description": "Una landing page interactiva y minimalista para invitación de boda, diseñada con un sistema elegante de tipografía y colores neutros.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
