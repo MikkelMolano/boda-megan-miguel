@@ -14,9 +14,9 @@ const normalizarNombre = (nombre: string) => {
 };
 
 const llegadaOptions = [
-  { value: 'Ceremonia - 4:30 PM', label: 'Ceremonia - 4:30 PM' },
-  { value: 'Brindis - 6 PM',   label: 'Brindis - 6 PM' },
-  { value: 'Después de las 6 PM',      label: 'Después de las 6 PM' },
+  { value: 'ceremonia', label: 'Ceremonia - 4:30 PM' },
+  { value: 'brindis',   label: 'Brindis - 6 PM' },
+  { value: 'otro',      label: 'Después de las 6 PM' },
 ];
 
 const asistenciaOptions = [
@@ -63,7 +63,7 @@ export default function RsvpSection() {
     formData.attending !== '' &&
     (isDeclined || formData.hora_llegada !== '');
 
-  const FECHA_LIMITE = new Date('2026-07-10T23:59:59-05:00');
+  const FECHA_LIMITE = new Date('2026-07-19T23:59:59-05:00');
   const plazoVencido = new Date() > FECHA_LIMITE;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -142,7 +142,7 @@ export default function RsvpSection() {
           </h2>
           <div className="w-8 h-[1px] bg-stone-300 mx-auto my-6" />
           <p className="font-sans text-stone-500 text-sm max-w-sm mx-auto leading-relaxed">
-            Por favor, confirmar tu asistencia antes del <strong className="font-bold" style={{ color: '#5C5F4B' }}>10 de Julio de {WEDDING_CONFIG.date.getFullYear()}</strong> para ayudarnos con la organización.
+            Por favor, confirmar tu asistencia antes del <strong className="font-bold" style={{ color: '#5C5F4B' }}>19 de julio de {WEDDING_CONFIG.date.getFullYear()}</strong> para ayudarnos con la organización.
           </p>
         </div>
 
@@ -175,8 +175,8 @@ export default function RsvpSection() {
                 </p>
                 <p className="mt-8 text-[11px] text-stone-400">
                   {plazoVencido 
-                    ? "El plazo para modificar tu respuesta venció el 10 de julio de 2026." 
-                    : "Puedes modificar tu respuesta hasta el 10 de julio de 2026."}
+                    ? "El plazo para modificar tu respuesta venció el 19 de julio de 2026." 
+                    : "Tienes hasta el domingo 19 de julio de 2026 para confirmar o modificar tu respuesta."}
                 </p>
                 {!plazoVencido && (
                   <button
@@ -401,9 +401,13 @@ export default function RsvpSection() {
                     </span>
                   )}
                 </button>
-                {plazoVencido && (
+                {plazoVencido ? (
                   <p className="mt-4 text-center text-xs text-red-500">
-                    El plazo para modificar tu respuesta venció el 10 de julio de 2026.
+                    El plazo para modificar tu respuesta venció el 19 de julio de 2026.
+                  </p>
+                ) : (
+                  <p className="mt-4 text-center text-xs text-stone-400">
+                    Tienes hasta el domingo 19 de julio de 2026 para confirmar o modificar tu respuesta.
                   </p>
                 )}
               </motion.form>
